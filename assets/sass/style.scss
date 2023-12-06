@@ -1,13 +1,13 @@
-@use 'config';
-@use 'header';
-@use 'bio';
-@use 'work';
-@use 'quote';
-@use 'contact';
-@use 'other';
-@use 'about-me';
-@use 'CV';
-@use 'footer';
+@import 'config';
+@import 'header';
+@import 'bio';
+@import 'work';
+@import 'quote';
+@import 'contact';
+@import 'other';
+@import 'about-me';
+@import 'CV';
+@import 'footer';
 
 
 * {
