@@ -4,7 +4,7 @@
 }
 
 .work-container {
-  padding: 50px 20px;
+  padding: 50px 30px;
   background-color: $yellow-color;
 
   display: flex;
@@ -21,11 +21,15 @@
       width: 100%;
       margin: 30px auto;
       margin-top: 10px;
-      box-shadow: 5px 5px 10px rgba($dark-color, 0.55);
+      box-shadow: 0 0 15px rgba($dark-color, 0.85);
       border-radius: 5px;
 
+      &:hover {
+        box-shadow: 0 0 20px rgba($dark-color, 1.85);
+      }
+
       &:active {
-        box-shadow: 0 0 5px rgba($dark-color, 0.55);
+        box-shadow: 0 0 15px rgba($dark-color, 0.55);
       }
     }
   }

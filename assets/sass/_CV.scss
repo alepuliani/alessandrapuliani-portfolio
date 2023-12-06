@@ -1,6 +1,7 @@
 .cv-container {
   position: relative;
   padding: 50px 10px;
+  margin: 0 5%;
   border-radius: 20px;
   background-color: $yellow-color;
   box-shadow: 0 0 20px rgba($dark-color, 0.5);
@@ -41,7 +42,7 @@
 
 @media screen and (min-width: 768px) {
  .cv-container {
-    margin: 20px 60px;
+    margin: 20px 15%;
   
     .cv-title {
       position: absolute;
@@ -55,6 +56,6 @@
 
 @media screen and (min-width: 1025px) {
   .cv-container {
-    margin: 20px 130px;
+    margin: 20px 20%;
   }
 }
