@@ -24,7 +24,6 @@ body {
     font-size: map-get($font-sizes, extra-large);
     font-weight: map-get($font-weights, bold );
     font-family: 'Oswald', sans-serif;
-
     color: $dark-color;
   }
 
@@ -32,18 +31,21 @@ body {
     font-weight: map-get($font-weights, bold);
     font-size: map-get($font-sizes, large );
     font-family: 'Playfair Display', serif;
+    color: $dark-color;
   }
 
   h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: map-get($font-weights, bold);
     font-size: map-get($font-sizes, small);
+    color: $dark-color;
   }
 
   p {
     font-size: map-get($font-sizes, small );
     line-height: 22px;
     font-family: 'Poppins', sans-serif;
+    color: $dark-color;
   }
 }
 
