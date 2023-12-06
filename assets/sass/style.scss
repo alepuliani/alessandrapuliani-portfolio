@@ -1,0 +1,85 @@
+@import 'config';
+@import 'header';
+@import 'bio';
+@import 'work';
+@import 'quote';
+@import 'contact';
+@import 'other';
+@import 'about-me';
+@import 'CV';
+@import 'footer';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 60px;
+  text-align: center;
+
+  h1 {
+    font-size: map-get($font-sizes, extra-large);
+    font-weight: map-get($font-weights, bold );
+    font-family: 'Oswald', sans-serif;
+
+    color: $dark-color;
+  }
+
+  h2 {
+    font-weight: map-get($font-weights, bold);
+    font-size: map-get($font-sizes, large );
+    font-family: 'Playfair Display', serif;
+  }
+
+  h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: map-get($font-weights, bold);
+    font-size: map-get($font-sizes, small);
+  }
+
+  p {
+    font-size: map-get($font-sizes, small );
+    line-height: 22px;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $light-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $pink-color;
+  border-radius: 0.25rem;
+  
+  &:hover {
+    background-color: darken($pink-color, 5);
+  }
+}
+
+//MEDIA QUERIES
+
+@media screen and (min-width: 768px) {
+  body {
+    h1 {
+      font-size: map-get($font-sizes, extra-large);
+    }
+
+    h2 {
+      font-size: map-get($font-sizes, large);
+    }
+
+    p {
+      font-size: map-get($font-sizes, normal);
+      line-height: 22px;
+    }
+  }
+}

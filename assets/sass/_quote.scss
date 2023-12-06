@@ -1,0 +1,47 @@
+.quote-container {
+  position: relative;
+  align-self: center;
+  box-shadow: 0 0 10px rgb($dark-color, 5);
+  
+  .blockquote {
+    padding: 40px 50px 20px 50px;
+  
+    p {
+      font-family: 'Playfair Display', serif; 
+    }
+  }
+}
+
+.stars1 {
+  width: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+
+.stars2 {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+//MEDIA QUERIES
+
+@media screen and (min-width: 768px) {
+  .quote-container {
+    padding: 80px 30px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .stars1 {
+    width: 70px;
+    left: 100px;
+  }
+
+  .stars2 {
+    width: 50px;
+    right: 130px;
+  }
+}

@@ -1,0 +1,102 @@
+.contact-link {
+  height: 60px;
+}
+
+.contact-container {
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    img {
+      width: 45px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .form-container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    padding-bottom: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  
+    input,
+    textarea {
+      margin-bottom: 13px;
+      border: 2px solid $lilac-color;
+      border-radius: 5px;
+    }
+  
+    input,
+    textarea {
+      padding: 8px;
+  
+      &:focus {
+        outline: none;
+        background-color: lighten($pink-color, 26);
+      }
+    }
+  
+    textarea {
+      height: 150px;
+    }
+  
+    .send-button {
+      @include buttons ($pink-color);
+      width: 90px;
+    }
+
+    .cancel-button {
+      @include buttons (lighten($pink-color, 10));
+      width: 100px;
+    }
+  
+    div {
+      margin-bottom: 13px;
+    }
+  }
+}
+
+//MEDIA QUERIES
+
+@media screen and (min-width: 768px) {
+  .contact-container {
+    text-align: end;
+
+    h1 {
+      text-align: center;
+    }
+
+    .form-container {
+      flex-direction: row;
+      align-items: start;
+      justify-content: center;
+      padding-top: 20px;
+
+      .thanks-col {
+        max-width: 300px;
+      }
+
+      .form-col {
+        padding-left: 30px;
+
+        .btn-div {
+          display: flex;
+          justify-content: space-between;
+          
+          button {
+            margin: 0;
+          }
+        }
+      } 
+    }
+  }
+}

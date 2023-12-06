@@ -1,0 +1,67 @@
+$yellow-color: #e8ff96;
+$lilac-color: #EDB5F7;
+$pink-color: #ff80ce;
+$light-color: #F8F9FA;
+$dark-color: #3D3D3D;
+
+@mixin links-style {
+  text-decoration: none;
+  color: $dark-color;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  white-space: nowrap; 
+}
+
+@mixin social-links-style {
+  color: $dark-color;
+  text-decoration: none;
+  margin: 4px;
+  font-size: map-get($font-sizes, large);
+}
+
+@mixin tooltips {
+  position: absolute;
+  color: white;
+  padding: 2px 4px 2px 4px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap; 
+}
+
+@mixin buttons ($bg-color) {
+  text-decoration: none;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+  color: $dark-color;
+  font-weight: map-get($font-weights, bold );
+  box-shadow: 0 0 8px rgba($dark-color, 0.2);
+  background-color: $bg-color;
+
+  &:hover {
+    background-color: darken($bg-color, 5);
+  }
+
+  &:active {
+    box-shadow: none;
+    background-color: $bg-color;
+  }
+}
+
+$font-sizes: (
+  "small": 16px, 
+  "normal": 18px, 
+  "large": 25px,
+  "extra-large": 30px
+  );
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700
+);

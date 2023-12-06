@@ -1,0 +1,94 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+
+  .about-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .my-photo {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 100px;
+    }
+
+    .intro-section {
+      padding: 40px 7%;
+      margin: 40px 20px 60px 20px;
+      border-radius: 20px;
+      max-width: 500px;
+      box-shadow: 0 0 20px rgba($dark-color, 0.3);
+      background-color: $yellow-color; 
+    }
+  }
+
+  a {
+    @include buttons ($pink-color);
+  }
+}
+
+.life-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 7%;
+  margin: 50px 40px 80px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba($dark-color, 0.5);
+  background-color: $lilac-color;
+
+  img {
+    width: 200px;
+    border-radius: 130px;
+    margin-top: 20px;
+  }
+}
+
+//MEDIA QUERIES
+
+@media screen and (min-width: 768px) {
+  .about-me-container {
+    text-align: start;
+    margin-bottom: 30px;
+
+    .about-flex {
+      flex-direction: row-reverse;
+
+      .cv-section {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .life-section {
+    align-self: center;
+    text-align: start;
+    flex-direction: row-reverse;
+    margin: 10%;
+    margin-bottom: 100px;
+
+    img {
+      width: 250px;
+      margin-right: 20px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1025px) {
+  .life-section {
+    margin: 100px 200px;
+
+    img {
+      width: 260px;
+    }
+  }
+}

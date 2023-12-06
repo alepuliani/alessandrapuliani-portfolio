@@ -1,0 +1,50 @@
+.work-link {
+  height: 60px;
+  background-color: $lilac-color;
+}
+
+.work-container {
+  padding: 50px 20px;
+  background-color: $yellow-color;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 40px;
+  }
+
+  .portfolio-work {
+    
+    img {
+      width: 100%;
+      margin: 30px auto;
+      box-shadow: 5px 5px 10px rgba($dark-color, 0.55);
+      border-radius: 5px;
+
+      &:active {
+        box-shadow: 0 0 5px rgba($dark-color, 0.55);
+      }
+    }
+  }
+}
+
+//MEDIA QUERIES
+
+
+@media screen and (min-width: 768px) {
+  .portfolio-work {
+    img {
+      width: 500px;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .portfolio-work {
+    img {
+      width: 600px;
+    }
+  }
+}

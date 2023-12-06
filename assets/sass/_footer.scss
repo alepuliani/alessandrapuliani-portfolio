@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+
+  .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+
+    .github-button,
+    .linkedin-button,
+    .instagram-button {
+      position: relative; 
+      @include social-links-style;
+  
+      &:hover{
+        color: $pink-color;
+
+        .social-tooltip {
+          opacity: 1;
+        }
+      }
+
+      .social-tooltip {
+        @include tooltips;
+        bottom: -30px;
+        left: -10px;
+        background-color: $pink-color;
+      }
+    }
+  }
+}
+
+//MEDIA QUERIES
+
+@media screen and (min-width: 768px) {
+  .footer {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--FAVICON-->
+
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <!--TITLE-->
+
+  <title>Alessandra Puliani | Junior Full-Stack Developer</title>
+
+  <meta name="description" content="Hi, I'm Alessandra Puliani, a Junior Full-Stack Developer.">
+
+  <!--OG-->
+
+  <meta property="og:title" content="Alessandra Puliani | Junior Full-Stack Developer">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Hi, I'm Alessandra Puliani, a Junior Full-Stack Developer.">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+
+  <!--BOOTSTRAP-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--STYLESHEET-->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--BOOTSTRAP ICONS-->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <!--FONTS-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Playfair+Display:ital,wght@1,400;1,600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!--EMAILJS FOR CONTACT FORM-->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+      emailjs.init('E62xf-JI5QdNCWufs');
+        })();
+  </script>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        this.contact_number.value = Math.random() * 100000 | 0;
+        emailjs.sendForm('contact_service', 'contact_form', this)
+          .then(function() {
+            console.log('SUCCESS!');
+          }, function(error) {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
+</head>
+
+<body>
+  
+  <!--HEADER-->
+
+  <header>
+    <nav class="header-container bg-light">
+      <div class='left-section'>
+        <a href="#home"><img class="logo-img" src="assets/img/astronauta.png" alt="Logo representing an astronaut and personal initials"></a>
+      </div>
+        
+      <div class="right-section">
+        <div class="right-menu">
+          <ul class='menu'>
+            <li><a href='#home'>HOME</a></li>
+            <li><a href='#work'>WORK</a></li>
+            <li><a href='about-me.html' target="_blank">ABOUT ME</a></li>
+            <li><a href='#contact'>CONTACT</a></li>
+          </ul>
+        </div>
+        
+        <div class="dropdown"><span><i class="bi bi-list list"></i></span>
+
+          <ul class="features-menu bg-dark">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="about-me.html " target="_blank">ABOUT ME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>    
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!--BIO-->
+    <div class="bio bg-light" id="home">
+
+      <div class="bio-flex">
+        <div class="photo-container">
+          <img class="profile-photo" src="/assets/img/personal-photos/Profile-photo.jpg" alt="Profile Picture">
+        </div>
+  
+        <div class="bio-container">
+  
+          <h1>HI! I'M ALESSANDRA!</h1>
+          <h2>Junior Full-Stack Developer</h2>
+          <p>
+          My name is Alessandra Puliani, I am 29 and I live in Rome. <br>
+          I have recently approached the world of IT discovering a great interest and I am following a path to become a Full Stack Developer.
+          </p>
+  
+        </div>
+      </div>
+
+      <div class="cv-flex">
+        <a href="about-me.html" target="_blank">MORE ABOUT ME</a>
+      </div>
+    </div>
+
+    <!--SKILLS-->
+
+    <div class="skills-container">
+
+      <h1>MY SKILLS<img src="assets/img/icons/Space.png" alt="Image rapresenting an UFO"></h1> 
+
+      <p>These are the languages and toolkit I'm working with</p>
+      
+      <div class="skills-images">
+
+        <img src="assets/img/tools/html-icon.png" alt="">
+
+        <img src="assets/img/tools/css-icon.png" alt="">
+
+        <img src="assets/img/tools/bootstrap-4-icon.png" alt="">
+     
+        <img src="assets/img/tools/sass-icon.png" alt="">
+          
+        <img src="assets/img/tools/visual-studio-code-icon.png" alt="">
+
+      </div>
+    </div>
+
+    <!--WORK-->
+
+    <section class="work-link" id="work"></section>
+
+    <div class="work-container">
+      <h1>WORK <img src="assets/img/icons/spaceship.png" alt=""> </h1>
+
+      <div class="portfolio-work">
+        <a href="">
+          <img src="assets/img/personal-photos/portfolio.PNG" alt="">
+        </a>
+
+        <div class="work-description">
+          <h5>Personal web portfolio</h5>
+          <p>Web portfolio created with HTML and CSS.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!--CONTACT-->
+
+  <section class="contact-link bg-light" id="contact"></section>
+
+  <div class="contact-container bg-light">
+
+    <h1>CONTACT ME <img src="/assets/img/icons/alien.png" alt="Image rapresenting an Alien"></h1>
+
+    <div class="form-container">
+        
+      <div class="thanks-col">
+        <h2>
+          Hey, thanks for stopping  by!
+            Feel free to send me a message
+        </h2>
+  
+        <p>
+          If you want to talk about work or anything else fill the form below and I will reply you as soon as possible <br> Hope to hear you soon!
+        </p>
+      </div>
+  
+      <div class="form-col">
+        <form class="mx-auto" id="contact-form">
+  
+          <input type="hidden" name="contact_number">
+          
+          <input type="text" name="user_name" placeholder="Name" required>
+          
+          <input type="email" name="user_email" placeholder="Email" required>
+          
+          <textarea name="message" placeholder="Message" required></textarea>
+          
+          <div class="btn-div">
+            <button class="send-button" type="submit">Send</button>
+            <button class="cancel-button" type="reset">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <!--FIXED ARROW-->
+    <div class="fixed-down">
+      <a class="github-button" href="">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+      </a>
+    </div>
+
+  <!--FOOTER-->
+  <footer class="footer bg-light">
+      <div class="social">
+        <a class="github-button" href="https://github.com/alepuliani" target="_blank">
+          <i class="bi bi-github"></i>
+          <div class="social-tooltip">Github</div>
+        </a>
+  
+        <a class="linkedin-button" href="https://www.linkedin.com/in/alessandra-puliani-3677b6126/" target="_blank">
+          <i class="bi bi-linkedin"></i>
+          <div class="social-tooltip">Linkedin</div>
+        </a>
+  
+        <a class="instagram-button" href="https://www.instagram.com/alessandrapuliani/" target="_blank">
+          <i class="bi bi-instagram"></i>
+          <div class="social-tooltip">Instagram</div>
+        </a>
+      </div>
+  </footer>
+
+  <!--BOOTSTRAP-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

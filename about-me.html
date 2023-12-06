@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FAVICON-->
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!--TITLE-->
+
+    <title>Alessandra Puliani | About Me</title>
+
+    <meta name="description" content="Hi, I'm Alessandra Puliani, here you can learn more about my life and my background.">
+
+    <!--OG-->
+
+    <meta property="og:title" content="Alessandra Puliani | Junior Full-Stack Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Hi, I'm Alessandra Puliani, a Junior Full-Stack Developer.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <!--BOOTSTRAP-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--STYLESHEET-->
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!--BOOTSTRAP ICONS-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!--FONTS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Playfair+Display:ital,wght@1,400;1,600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!--EMAILJS FOR CONTACT FORM-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      (function() {
+        emailjs.init('E62xf-JI5QdNCWufs');
+          })();
+    </script>
+
+    <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          this.contact_number.value = Math.random() * 100000 | 0;
+          emailjs.sendForm('contact_service', 'contact_form', this)
+            .then(function() {
+              console.log('SUCCESS!');
+            }, function(error) {
+              console.log('FAILED...', error);
+            });
+        });
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <!--HEADER-->
+
+    <header>
+      <nav class="header-container bg-light">
+        <div class='left-section'>
+          <a href="index.html#home"><img class="logo-img" src="assets/img/astronauta.png" alt="Logo representing an astronaut and personal initials"></a>
+        </div>
+          
+        <div class="right-section">
+          <div class="right-menu">
+            <ul class='menu'>
+              <li><a href='index.html#home'>HOME</a></li>
+              <li><a href='index.html#work'>WORK</a></li>
+              <li><a href='about-me.html' target="_blank">ABOUT ME</a></li>
+              <li><a href='#contact'>CONTACT</a></li>
+            </ul>
+          </div>
+          
+          <div class="dropdown"><span><i class="bi bi-list list"></i></span>
+  
+            <ul class="features-menu bg-dark">
+              <li><a href="#index.html#home'">HOME</a></li>
+              <li><a href="index.html#work">WORK</a></li>
+              <li><a href="about-me.html " target="_blank">ABOUT ME</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>    
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--ABOUT ME-->
+
+    <main class="bg-light">
+
+      <div class="about-me-container">
+
+        <div class="about-flex">
+          <img class="my-photo" src="assets/img/personal-photos/Profile-photo.jpg" alt="Profile picture">
+
+          <div class="intro-section">
+            
+            <h1>ABOUT ME</h1>
+    
+            <p>
+              In my life I have done different jobs, I've been a hostess, a shop assistant and a nail tech, jobs that gave me a lot but in which I always felt like something was missing. <br>
+              I am a very <strong>logical</strong> and <strong>practical</strong> person. 
+              Expecially when I was working as nail technician I realized that what motivated me the most was <strong>setting a goal</strong> and <strong>finding a way</strong> to get there, so I wanted something that always gave me that feeling and that's where the world of <strong>web development</strong> came into play.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <a href="/CV.html" target="_blank">CURRICULUM VITAE</a>
+        </div>
+      </div>
+
+      <!--MY-LIFE-->
+
+      <div class="life-section">
+        <div class="life-container">
+          <h1>MY LIFE</h1>
+        <p>
+          When I'm off I like to read and watch films and TV series. <br> I'm a great fan of the world of <strong>fantasy</strong> and <strong>science fiction</strong> because I'm fascinated by the vastness of the world and the universe and the <strong>mysteries</strong> they can hide.
+        </p>
+          
+        <p>
+          I love spending time surrounded by <strong>nature</strong> and I have a passion for <strong>photography</strong>.
+        </p>
+
+        <p>
+          I am very concerned about the environmental issue and the repercussions it is having on us and on the animal world, that's why I try to have a <strong>sustainable lifestyle</strong> and help and support activities and associations with objectives aimed at solving the problem.
+        </p>
+        </div>
+
+        <div class="img-container">
+          <img src="assets/img/personal-photos/personal.jpg" alt="Photo of me in the woods with my camera">
+        </div>
+
+        </div>
+      </div>
+
+      <!--QUOTE-->
+
+      <div class="quote-container bg-dark py-5">
+
+        <img class="stars1" src="assets/img/icons/stars.png" alt="Image rapresenting stars">
+      
+        <blockquote class="blockquote text-center text-white">
+          <p class="mb-3">The future belongs to those who learn more skills and combine them in creative ways.</p>
+          <footer class="blockquote-footer">Robert Greene</footer>
+        </blockquote>
+
+        <img class="stars2" src="assets/img/icons/stars.png" alt="Image rapresenting stars">
+      </div>
+
+    </main>
+
+    <!--CONTACT-->
+
+    <section class="contact-link bg-light" id="contact"></section>
+
+    <div class="contact-container bg-light">
+
+      <h1>CONTACT ME <img src="/assets/img/icons/alien.png" alt="Image rapresenting an Alien"></h1>
+
+      <div class="form-container">
+        <div class="thanks-col">
+          <h2>
+            Hey, thanks for stopping  by!
+            Feel free to send me a message
+          </h2>
+
+          <p>
+            If you want to talk about work or anything else fill the form below and I will reply you as soon as possible <br> Hope to hear you soon!
+          </p>
+        </div>
+
+        <div class="form-col">
+          <form class="mx-auto" id="contact-form">
+
+            <input type="hidden" name="contact_number">
+          
+            <input type="text" name="user_name" placeholder="Name" required>
+          
+            <input type="email" name="user_email" placeholder="Email" required>
+          
+            <textarea name="message" placeholder="Message" required></textarea>
+          
+            <div class="btn-div">
+              <button class="send-button" type="submit">Send</button>
+              <button class="cancel-button" type="reset">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--FIXED ARROW-->
+
+    <div class="fixed-down">
+      <a class="github-button" href="">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+      </a>
+    </div>
+
+    <!--FOOTER-->
+    
+    <footer class="footer bg-light">
+      <div class="social">
+        <a class="github-button" href="https://github.com/alepuliani" target="_blank">
+          <i class="bi bi-github"></i>
+          <div class="social-tooltip">Github</div>
+        </a>
+  
+        <a class="linkedin-button" href="https://www.linkedin.com/in/alessandra-puliani-3677b6126/" target="_blank">
+          <i class="bi bi-linkedin"></i>
+          <div class="social-tooltip">Linkedin</div>
+        </a>
+  
+        <a class="instagram-button" href="https://www.instagram.com/alessandrapuliani/" target="_blank">
+          <i class="bi bi-instagram"></i>
+          <div class="social-tooltip">Instagram</div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+  </body>
+</html>

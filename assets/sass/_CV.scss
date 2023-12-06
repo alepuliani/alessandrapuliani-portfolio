@@ -1,0 +1,60 @@
+.cv-container {
+  position: relative;
+  padding: 50px 20px;
+  border-radius: 20px;
+  background-color: $yellow-color;
+  box-shadow: 0 0 20px rgba($dark-color, 0.5);
+
+  h1 {
+    font-size: map-get($font-sizes, extra-large);
+    font-weight: map-get($font-weights, bold );
+    font-family: 'Oswald', sans-serif;
+    color: $pink-color;
+
+    position: absolute;
+    top: -24px;
+    left: 25px;
+  }
+
+  .name {
+    position: static;
+    color: $dark-color;
+    font-size: map-get($font-sizes, large);
+  }
+
+  .cv-main {
+    text-align: start;
+
+    h2 {
+      font-weight: map-get($font-weights, bold);
+      font-size: 23px;
+      text-align: center;
+    }
+
+    li {
+      list-style-type: circle;
+    }
+  }
+}
+
+//MEDIA QUERIES
+
+@media screen and (min-width: 768px) {
+ .cv-container {
+    margin: 20px 60px;
+  
+    .cv-title {
+      position: absolute;
+      top: 200px;
+      left: -210px;
+      transform: rotate(270deg);
+      font-size: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .cv-container {
+    margin: 20px 130px;
+  }
+}
