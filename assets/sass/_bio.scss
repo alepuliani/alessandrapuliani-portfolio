@@ -5,7 +5,6 @@
   align-items: center;
   
   .photo-container {
-
     img {
       width: 200px;
       height: 200px;
@@ -43,10 +42,6 @@
     .photo-container {
       width: 44%;
       justify-content: end;
-
-      .profile-photo {
-        width: 200px;
-      }
     }
   
     .bio-container {
@@ -66,7 +61,7 @@
   .bio-col {
     padding-right: 30px;
 
-    .profile-photo {
+    img {
       width: 400px;
       height: 400px;
       border-radius: 200px;
