@@ -2,13 +2,14 @@
   position: relative;
   align-self: center;
   box-shadow: 0 0 10px rgb($dark-color, 5);
-  color: $light-color;
+  
   
   .blockquote {
     padding: 40px 50px 20px 50px;
   
     p {
       font-family: 'Playfair Display', serif; 
+      color: $light-color;
     }
   }
 }
