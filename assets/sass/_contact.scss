@@ -29,6 +29,10 @@
   form {
     display: flex;
     flex-direction: column;
+
+    .honeypot {
+      display: none;
+    }
   
     input,
     textarea {

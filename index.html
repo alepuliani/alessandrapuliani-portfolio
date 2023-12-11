@@ -132,7 +132,7 @@
       <h1>WORK <img src="assets/img/icons/spaceship.png" alt=""> </h1>
 
       <div class="portfolio-work">
-        <a href="https://drive.google.com/file/d/1AJX5PCL7tFOm9aiNOr7K5wfCmpJMu7J9/view?usp=sharing" target="_blank">
+        <a href="https://drive.google.com/file/d/1YDEria0jGIhKnQMGX2hvW7klyq7fvCTu/view?usp=sharing" target="_blank">
           <img src="assets/img/personal-photos/portfolio.PNG" alt="project preview">
         </a>
 
@@ -168,12 +168,22 @@
   
       <div class="form-col">
         <form class="mx-auto" id="contact-form" action="https://formsubmit.co/7a9e4c1d0c4a66d1ed17787bba8c379e" method="POST">
+
+          <!--HONEYPOT-->
+
+          <input class="honeypot" type="text" name="_honey">
+
+          <!--DISABLE CAPTCHA-->
+
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden" name="_next" value="https://alepuliani.github.io/alessandrapuliani-portfolio/success.html">
   
           <input type="hidden" name="contact_number">
           
-          <input type="text" name="user_name" placeholder="Name" required>
+          <input type="text" name="name" placeholder="Name" required>
           
-          <input type="email" name="user_email" placeholder="Email" required>
+          <input type="email" name="email" placeholder="Email" required>
           
           <textarea name="message" placeholder="Message" required></textarea>
           
