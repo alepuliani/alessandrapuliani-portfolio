@@ -1,8 +1,20 @@
 .success {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: auto 20px;
-  margin: auto;
-  text-align: center;
+  padding: 60px;
+
+  img {
+    width: 80px;
+    align-self: center;
+  }
+
+  .success-text {
+    padding: 20px;
+
+    h1 {
+      margin: 10px;
+    }
+  }
+
+  a {
+    @include buttons ($pink-color);
+  }
 }
