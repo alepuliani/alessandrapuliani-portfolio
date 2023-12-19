@@ -31,15 +31,24 @@ body {
   h2 {
     font-weight: map-get($font-weights, bold);
     font-size: map-get($font-sizes, large );
-    font-family: 'Playfair Display', serif;
+    font-family: 'Oswald', sans-serif;
     color: $dark-color;
+    margin-bottom: 10px;
+    text-align: center;
   }
 
   h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: map-get($font-weights, bold);
-    font-size: map-get($font-sizes, small);
+    font-size: map-get($font-sizes, normal);
     color: $dark-color;
+    text-align: center;
+  }
+
+  h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: map-get($font-weights, bold);
+    font-size: map-get($font-sizes, normal);
   }
 
   p {

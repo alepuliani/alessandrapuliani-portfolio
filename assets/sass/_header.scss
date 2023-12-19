@@ -91,6 +91,10 @@
           &:hover {
             color: $pink-color;
           }
+
+          &:active .features-menu {
+            display: none;
+          }
         }
       }
     }
@@ -121,8 +125,6 @@
         padding-left: 42px;
       }
     }
-
-
   }
 }
 

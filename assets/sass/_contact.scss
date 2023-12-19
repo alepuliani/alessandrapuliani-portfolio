@@ -7,8 +7,7 @@
   padding-top: 0;
   text-align: center;
 
-  h1 {
-    margin-bottom: 10px;
+  h2 {
     img {
       width: 45px;
       padding-bottom: 10px;
@@ -20,10 +19,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
 
-  h2 {
-    padding-bottom: 10px;
+    .thanks-p {
+      font-family: 'Playfair Display', serif;
+      font-weight: map-get($font-weights, bold);
+      font-size: map-get($font-sizes, normal);
+    }
   }
 
   form {
