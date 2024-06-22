@@ -8,8 +8,8 @@
 
   h1 {
     font-size: map-get($font-sizes, extra-large);
-    font-weight: map-get($font-weights, bold );
-    font-family: 'Oswald', sans-serif;
+    font-weight: map-get($font-weights, bold);
+    font-family: "Oswald", sans-serif;
     color: $pink-color;
 
     position: absolute;
@@ -41,9 +41,9 @@
 //MEDIA QUERIES
 
 @media screen and (min-width: 768px) {
- .cv-container {
+  .cv-container {
     margin: 20px 15%;
-  
+
     .cv-title {
       position: absolute;
       top: 200px;

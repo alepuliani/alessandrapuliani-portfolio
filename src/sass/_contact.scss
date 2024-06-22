@@ -21,9 +21,8 @@
     align-items: center;
 
     .thanks-p {
-      font-family: 'Playfair Display', serif;
       font-weight: map-get($font-weights, bold);
-      font-size: map-get($font-sizes, normal);
+      font-size: map-get($font-sizes, large);
     }
   }
 
@@ -34,38 +33,38 @@
     .honeypot {
       display: none;
     }
-  
+
     input,
     textarea {
       margin-bottom: 13px;
       border: 2px solid $lilac-color;
       border-radius: 5px;
     }
-  
+
     input,
     textarea {
       padding: 8px;
-  
+
       &:focus {
         outline: none;
         background-color: lighten($pink-color, 26);
       }
     }
-  
+
     textarea {
       height: 150px;
     }
-  
+
     .send-button {
-      @include buttons ($pink-color);
+      @include buttons($pink-color);
       width: 90px;
     }
 
     .cancel-button {
-      @include buttons (lighten($pink-color, 10));
+      @include buttons(lighten($pink-color, 10));
       width: 100px;
     }
-  
+
     div {
       margin-bottom: 13px;
     }
@@ -98,12 +97,12 @@
         .btn-div {
           display: flex;
           justify-content: space-between;
-          
+
           button {
             margin: 0;
           }
         }
-      } 
+      }
     }
   }
 }

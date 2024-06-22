@@ -1,228 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!--FAVICON-->
+    <!--FAVICON-->
 
-  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon" />
 
-  <!--TITLE-->
+    <!--TITLE-->
 
-  <title>Alessandra Puliani | Junior Front-End Developer</title>
+    <title>Alessandra Puliani | Junior Front-End Developer</title>
 
-  <meta name="description" content="Hi, I'm Alessandra Puliani, a Junior Front-End Developer">
+    <meta
+      name="description"
+      content="Hi, I'm Alessandra Puliani, a Junior Front-End Developer"
+    />
 
-  <!--OG-->
+    <!--OG-->
 
-  <meta property="og:title" content="Alessandra Puliani | Junior Front-End Developer">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="Hi, I'm Alessandra Puliani, a Junior Front-End Developer.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/alepuliani/alessandrapuliani-portfolio/main/assets/img/personal-photos/website-img.PNG">
-  <meta property="og:image:alt" content="Website presentation">
-  <meta property="og:url" content="https://alepuliani.github.io/alessandrapuliani-portfolio/index.html#home">
+    <meta
+      property="og:title"
+      content="Alessandra Puliani | Junior Front-End Developer"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Hi, I'm Alessandra Puliani, a Junior Front-End Developer."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/alepuliani/alessandrapuliani-portfolio/main/src/img/personal-photos/website-img.PNG"
+    />
+    <meta property="og:image:alt" content="Website presentation" />
+    <meta
+      property="og:url"
+      content="https://alepuliani.github.io/alessandrapuliani-portfolio/index.html#home"
+    />
 
-  <!--BOOTSTRAP-->
+    <!--BOOTSTRAP-->
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-  <!--STYLESHEET-->
+    <!--STYLESHEET-->
 
-  <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="src/css/style.css" />
 
-  <!--BOOTSTRAP ICONS-->
+    <!--BOOTSTRAP ICONS-->
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
 
-  <!--FONTS-->
+    <!--FONTS-->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Playfair+Display:ital,wght@1,400;1,600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Playfair+Display:ital,wght@1,400;1,600&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  
-  <!--HEADER-->
+  <body>
+    <!--HEADER-->
 
-  <header>
-    <nav class="header-container bg-light">
-      <div class='left-section'>
-        <a href="#home"><img class="logo-img" src="assets/img/astronauta.png" alt="Logo representing an astronaut and personal initials"></a>
-      </div>
-        
-      <div class="right-section">
-        <div class="right-menu">
-          <ul class='menu'>
-            <li><a href='#home'>HOME</a></li>
-            <li><a href='#work'>WORK</a></li>
-            <li><a href='about-me.html'>ABOUT ME</a></li>
-            <li><a href='#contact'>CONTACT</a></li>
-          </ul>
+    <header>
+      <nav class="header-container bg-light">
+        <div class="left-section">
+          <a href="#home"
+            ><img
+              class="logo-img"
+              src="src/img/astronauta.png"
+              alt="Logo representing an astronaut and personal initials"
+          /></a>
         </div>
-        
-        <div class="dropdown"><span><i class="bi bi-list list"></i></span>
-          <ul class="features-menu bg-dark">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#work">WORK</a></li>
-            <li><a href="about-me.html ">ABOUT ME</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>    
-        </div>
-      </div>
-    </nav>
-  </header>
 
-  <main>
-
-    <!--BIO-->
-    <div class="bio bg-light" id="home">
-
-      <div class="bio-flex">
-        <div class="photo-container">
-          <img src="assets/img/personal-photos/Profile-photo.jpg" alt="Profile picture">
-        </div>
-  
-        <div class="bio-container">
-  
-          <h1>HI! I'M ALESSANDRA!</h1>
-          <p>
-          My name is Alessandra Puliani, I am 29 and I live in Rome. <br>
-          I have recently approached the world of IT discovering a great interest and I am following a path to become a <strong>Front-End Developer</strong>.
-          </p>
-  
-        </div>
-      </div>
-
-      <div class="cv-flex">
-        <a href="about-me.html">MORE ABOUT ME</a>
-      </div>
-    </div>
-
-    <!--SKILLS-->
-
-    <div class="skills-container">
-
-      <h2>MY SKILLS<img src="assets/img/icons/Space.png" alt="Image rapresenting an UFO"></h2> 
-
-      <p>These are the languages and toolkit I'm working with</p>
-      
-      <div class="skills-images">
-
-        <img src="assets/img/tools/html-icon.png" alt="">
-
-        <img src="assets/img/tools/css-icon.png" alt="">
-
-        <img src="assets/img/tools/bootstrap-4-icon.png" alt="">
-     
-        <img src="assets/img/tools/sass-icon.png" alt="">
-          
-        <img src="assets/img/tools/visual-studio-code-icon.png" alt="">
-
-      </div>
-    </div>
-
-    <!--WORK-->
-
-    <section class="work-link" id="work"></section>
-
-    <div class="work-container">
-      <h2>WORK <img src="assets/img/icons/spaceship.png" alt=""></h2>
-
-      <div class="portfolio-work">
-        <a href="https://drive.google.com/file/d/1GJd3-WJoeKTkvjDNgGN_rFuxPhq8ikgy/view?usp=sharing" target="_blank">
-          <img src="assets/img/personal-photos/portfolio.PNG" alt="project preview">
-        </a>
-
-        <div class="work-description">
-          <h5>Personal web portfolio</h5>
-          <p>Web portfolio created with HTML and CSS</p>
-        </div>
-      </div>
-
-      <div class="portfolio-work">
-        <a href="https://alepuliani.github.io/alessandrapuliani-happycounter/" target="_blank">
-          <img src="assets/img/personal-photos/happy-counter.png" alt="project preview">
-        </a>
-
-        <div class="work-description">
-          <h5>Happy Counter</h5>
-          <p>A counter to help you keep track of your progress</p>
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-  <!--CONTACT-->
-
-  <section class="contact-link bg-light" id="contact"></section>
-
-  <div class="contact-container bg-light">
-
-    <h2>CONTACT ME <img src="assets/img/icons/alien.png" alt="Image rapresenting an Alien"></h2>
-
-    <div class="form-container">
-        
-      <div class="thanks-col">
-        <p class="thanks-p">
-          Hey, thanks for stopping by! Feel free to send me a message
-        </p>
-  
-        <p>
-          If you want to talk about work or anything else fill the form below and I will reply you as soon as possible <br> Hope to hear you soon!
-        </p>
-      </div>
-  
-      <div class="form-col">
-        <form class="mx-auto" id="contact-form" action="https://formsubmit.co/7a9e4c1d0c4a66d1ed17787bba8c379e" method="POST">
-
-          <!--HONEYPOT-->
-
-          <input class="honeypot" type="text" name="_honey">
-
-          <!--DISABLE CAPTCHA-->
-
-          <input type="hidden" name="_captcha" value="false">
-
-          <input type="hidden" name="_next" value="https://alepuliani.github.io/alessandrapuliani-portfolio/success.html">
-          <input type="hidden" name="contact_number">        
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <textarea name="message" placeholder="Message" required></textarea>
-          
-          <div class="btn-div">
-            <button class="send-button" type="submit">Send</button>
-            <button class="cancel-button" type="reset">Cancel</button>
+        <div class="right-section">
+          <div class="right-menu">
+            <ul class="menu">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#work">WORK</a></li>
+              <li><a href="about-me.html">ABOUT ME</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
           </div>
-        </form>
+
+          <div class="dropdown">
+            <span><i class="bi bi-list list"></i></span>
+            <ul class="features-menu bg-dark">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#work">WORK</a></li>
+              <li><a href="about-me.html ">ABOUT ME</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--BIO-->
+      <div class="bio bg-light" id="home">
+        <div class="bio-flex">
+          <div class="photo-container">
+            <img
+              src="src/img/personal-photos/Profile-photo.jpg"
+              alt="Profile picture"
+            />
+          </div>
+
+          <div class="bio-container">
+            <h1>HI! I'M ALESSANDRA!</h1>
+            <p>
+              My name is Alessandra Puliani, I am 29 and I live in Rome. <br />
+              I have recently approached the world of IT discovering a great
+              interest and I am following a path to become a
+              <strong>Front-End Developer</strong>.
+            </p>
+          </div>
+        </div>
+
+        <div class="cv-flex">
+          <a href="about-me.html">MORE ABOUT ME</a>
+        </div>
+      </div>
+
+      <!--SKILLS-->
+
+      <div class="skills-container">
+        <h2>
+          MY SKILLS<img
+            src="src/img/icons/Space.png"
+            alt="Image rapresenting an UFO"
+          />
+        </h2>
+
+        <p>These are the languages and toolkit I'm working with</p>
+
+        <div class="skills-images">
+          <img src="src/img/tools/html-icon.png" alt="" />
+
+          <img src="src/img/tools/css-icon.png" alt="" />
+
+          <img src="src/img/tools/js-icon.png" alt="" />
+
+          <img src="src/img/tools/ts-icon.png" alt="" />
+
+          <img src="src/img/tools/bootstrap-4-icon.png" alt="" />
+
+          <img src="src/img/tools/sass-icon.png" alt="" />
+
+          <img src="src/img/tools/visual-studio-code-icon.png" alt="" />
+        </div>
+      </div>
+
+      <!--WORK-->
+
+      <section class="work-link" id="work"></section>
+
+      <div class="work-container">
+        <h2>WORK <img src="src/img/icons/spaceship.png" alt="" /></h2>
+
+        <div class="portfolio-work">
+          <a
+            href="https://drive.google.com/file/d/1GJd3-WJoeKTkvjDNgGN_rFuxPhq8ikgy/view?usp=sharing"
+            target="_blank"
+          >
+            <img
+              src="src/img/personal-photos/portfolio.PNG"
+              alt="project preview"
+            />
+          </a>
+
+          <div class="work-description">
+            <h5>Personal web portfolio</h5>
+            <p>Web portfolio created with HTML and CSS</p>
+          </div>
+        </div>
+
+        <div class="portfolio-work">
+          <a
+            href="https://alepuliani.github.io/alessandrapuliani-happycounter/"
+            target="_blank"
+          >
+            <img
+              src="src/img/personal-photos/happy-counter.png"
+              alt="project preview"
+            />
+          </a>
+
+          <div class="work-description">
+            <h5>Happy Counter</h5>
+            <p>A counter to help you keep track of your progress</p>
+          </div>
+        </div>
+
+        <div class="portfolio-work">
+          <a
+            href="https://alepuliani.github.io/alessandrapuliani-bookshelf/"
+            target="_blank"
+          >
+            <img
+              src="src/img/personal-photos/bookshelf.png"
+              alt="project preview"
+            />
+          </a>
+
+          <div class="work-description">
+            <h5>Bookshelf</h5>
+            <p>
+              An app to search for books by genre and store them in a personal
+              bookshelf.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--CONTACT-->
+
+    <section class="contact-link bg-light" id="contact"></section>
+
+    <div class="contact-container bg-light">
+      <h2>
+        CONTACT ME
+        <img src="src/img/icons/alien.png" alt="Image rapresenting an Alien" />
+      </h2>
+
+      <div class="form-container">
+        <div class="thanks-col">
+          <p class="thanks-p">
+            Hey, thanks for stopping by! Feel free to send me a message
+          </p>
+
+          <p>
+            If you want to talk about work or anything else fill the form below
+            and I will reply you as soon as possible <br />
+            Hope to hear you soon!
+          </p>
+        </div>
+
+        <div class="form-col">
+          <form
+            class="mx-auto"
+            id="contact-form"
+            action="https://formsubmit.co/7a9e4c1d0c4a66d1ed17787bba8c379e"
+            method="POST"
+          >
+            <!--HONEYPOT-->
+
+            <input class="honeypot" type="text" name="_honey" />
+
+            <!--DISABLE CAPTCHA-->
+
+            <input type="hidden" name="_captcha" value="false" />
+
+            <input
+              type="hidden"
+              name="_next"
+              value="https://alepuliani.github.io/alessandrapuliani-portfolio/success.html"
+            />
+            <input type="hidden" name="contact_number" />
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Message" required></textarea>
+
+            <div class="btn-div">
+              <button class="send-button" type="submit">Send</button>
+              <button class="cancel-button" type="reset">Cancel</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!--FOOTER-->
-  <footer class="footer bg-light">
+    <!--FOOTER-->
+    <footer class="footer bg-light">
       <div class="social">
-        <a class="github-button" href="https://github.com/alepuliani" target="_blank">
+        <a
+          class="github-button"
+          href="https://github.com/alepuliani"
+          target="_blank"
+        >
           <i class="bi bi-github"></i>
           <div class="social-tooltip">Github</div>
         </a>
-  
-        <a class="linkedin-button" href="https://www.linkedin.com/in/alessandra-puliani-3677b6126/" target="_blank">
+
+        <a
+          class="linkedin-button"
+          href="https://www.linkedin.com/in/alessandra-puliani-3677b6126/"
+          target="_blank"
+        >
           <i class="bi bi-linkedin"></i>
           <div class="social-tooltip">Linkedin</div>
         </a>
-  
-        <a class="instagram-button" href="https://www.instagram.com/alessandrapuliani/" target="_blank">
+
+        <a
+          class="instagram-button"
+          href="https://www.instagram.com/alessandrapuliani/"
+          target="_blank"
+        >
           <i class="bi bi-instagram"></i>
           <div class="social-tooltip">Instagram</div>
         </a>
       </div>
-  </footer>
+    </footer>
 
-  <!--BOOTSTRAP-->
+    <!--BOOTSTRAP-->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

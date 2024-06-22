@@ -1,14 +1,14 @@
-@import 'config';
-@import 'header';
-@import 'bio';
-@import 'work';
-@import 'quote';
-@import 'contact';
-@import 'skills';
-@import 'about-me';
-@import 'CV';
-@import 'footer';
-@import 'success';
+@import "config";
+@import "header";
+@import "bio";
+@import "work";
+@import "quote";
+@import "contact";
+@import "skills";
+@import "about-me";
+@import "CV";
+@import "footer";
+@import "success";
 
 * {
   margin: 0;
@@ -22,23 +22,23 @@ body {
 
   h1 {
     font-size: map-get($font-sizes, extra-large);
-    font-weight: map-get($font-weights, bold );
-    font-family: 'Oswald', sans-serif;
+    font-weight: map-get($font-weights, bold);
+    font-family: "Oswald", sans-serif;
     color: $dark-color;
     margin-bottom: 20px;
   }
 
   h2 {
     font-weight: map-get($font-weights, bold);
-    font-size: map-get($font-sizes, large );
-    font-family: 'Oswald', sans-serif;
+    font-size: map-get($font-sizes, large);
+    font-family: "Oswald", sans-serif;
     color: $dark-color;
     margin-bottom: 10px;
     text-align: center;
   }
 
   h3 {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: map-get($font-weights, bold);
     font-size: map-get($font-sizes, normal);
     color: $dark-color;
@@ -46,15 +46,15 @@ body {
   }
 
   h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: "Oswald", sans-serif;
     font-weight: map-get($font-weights, bold);
     font-size: map-get($font-sizes, normal);
   }
 
   p {
-    font-size: map-get($font-sizes, small );
+    font-size: map-get($font-sizes, small);
     line-height: 22px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: $dark-color;
   }
 }
@@ -71,7 +71,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: $pink-color;
   border-radius: 0.25rem;
-  
+
   &:hover {
     background-color: darken($pink-color, 5);
   }

@@ -4,7 +4,6 @@
   align-items: center;
   padding: 30px;
 
-
   .social {
     display: flex;
     justify-content: space-between;
@@ -14,10 +13,10 @@
     .github-button,
     .linkedin-button,
     .instagram-button {
-      position: relative; 
+      position: relative;
       @include social-links-style;
-  
-      &:hover{
+
+      &:hover {
         color: $pink-color;
 
         .social-tooltip {

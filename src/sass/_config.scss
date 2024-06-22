@@ -1,16 +1,16 @@
-$yellow-color: #E8FF96;
-$lilac-color: #EDB5F7;
+$yellow-color: #e8ff96;
+$lilac-color: #edb5f7;
 $pink-color: #ff80ce;
-$light-color: #F8F9FA;
-$dark-color: #3D3D3D;
+$light-color: #f8f9fa;
+$dark-color: #3d3d3d;
 
 @mixin links-style {
   text-decoration: none;
   color: $dark-color;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 15px;
   font-weight: bolder;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 @mixin social-links-style {
@@ -29,17 +29,17 @@ $dark-color: #3D3D3D;
   opacity: 0;
   transition: opacity 0.15s;
   pointer-events: none;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
-@mixin buttons ($bg-color) {
+@mixin buttons($bg-color) {
   text-decoration: none;
   padding: 10px 30px;
   border: none;
   border-radius: 5px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: $dark-color;
-  font-weight: map-get($font-weights, bold );
+  font-weight: map-get($font-weights, bold);
   box-shadow: 0 0 8px rgba($dark-color, 0.2);
   background-color: $bg-color;
 
@@ -54,11 +54,11 @@ $dark-color: #3D3D3D;
 }
 
 $font-sizes: (
-  "small": 15px, 
-  "normal": 18px, 
+  "small": 15px,
+  "normal": 18px,
   "large": 25px,
   "extra-large": 30px
-  );
+);
 
 $font-weights: (
   "regular": 400,
