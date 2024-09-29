@@ -1,5 +1,5 @@
 .work-link {
-  height: 60px;
+  height: 40px;
   background-color: $lilac-color;
 }
 
@@ -16,10 +16,10 @@
   }
 
   .portfolio-work {
+    margin-bottom: 30px;
     img {
       width: 100%;
-      margin: 30px auto;
-      margin-top: 50px;
+      margin: 20px auto;
       box-shadow: 0 0 15px rgba($dark-color, 0.85);
       border-radius: 5px;
 
@@ -30,6 +30,13 @@
       &:active {
         box-shadow: 0 0 15px rgba($dark-color, 0.55);
       }
+    }
+    h5 {
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 14px;
     }
   }
 }
