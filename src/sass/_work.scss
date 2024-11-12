@@ -4,49 +4,78 @@
 }
 
 .work-container {
-  padding: 50px 30px;
+  padding: 50px 0;
   background-color: $yellow-color;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  .work-div {
+    display: flex;
+    flex-direction: row; // Default mobile style
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
 
-  img {
-    width: 40px;
-  }
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
-  .portfolio-work {
-    margin-bottom: 30px;
-    img {
-      width: 100%;
-      margin: 20px auto;
-      box-shadow: 0 0 15px rgba($dark-color, 0.85);
-      border-radius: 5px;
+    .portfolio-work {
+      display: flex;
+      flex-direction: column; // Default mobile style
+      align-items: center;
+      width: 400px;
+      margin: 30px 20px;
 
-      &:hover {
-        box-shadow: 0 0 20px rgba($dark-color, 1.85);
+      img {
+        height: 200px;
+        margin: 20px auto;
+        box-shadow: 0 0 15px rgba($dark-color, 0.85);
+        border-radius: 5px;
+
+        &:hover {
+          box-shadow: 0 0 20px rgba($dark-color, 1.85);
+        }
+
+        &:active {
+          box-shadow: 0 0 15px rgba($dark-color, 0.55);
+        }
       }
 
-      &:active {
-        box-shadow: 0 0 15px rgba($dark-color, 0.55);
+      h5 {
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 14px;
+        white-space: normal;
       }
     }
-    h5 {
-      margin-bottom: 5px;
-    }
-
-    p {
-      font-size: 14px;
-    }
   }
-}
 
-//MEDIA QUERIES
+  // Stili per Desktop
+  @media screen and (min-width: 768px) {
+    .work-div {
+      flex-direction: column; // Cambia in colonna per desktop
+      justify-content: center; // Centra il contenuto
+      align-items: center;
+      overflow-x: visible; // Rimuove lo scrolling
+      white-space: normal; // Consente il wrapping del contenuto
 
-@media screen and (min-width: 768px) {
-  .portfolio-work {
-    img {
-      width: 120%;
+      .portfolio-work {
+        img {
+          height: 400px;
+          margin: 20px auto;
+          box-shadow: 0 0 15px rgba($dark-color, 0.85);
+          border-radius: 5px;
+
+          &:hover {
+            box-shadow: 0 0 20px rgba($dark-color, 1.85);
+          }
+
+          &:active {
+            box-shadow: 0 0 15px rgba($dark-color, 0.55);
+          }
+        }
+      }
     }
   }
 }
